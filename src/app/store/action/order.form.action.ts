@@ -1,9 +1,5 @@
-import { OrderForm } from '../models/order.form';
-
-export class UpdateOrderFormAction{
-static readonly type = '[UpdateOrderFormAction] update order form';
-static readonly des = "update order form";
-constructor(public readonly payload: any){
-
-}
+export class UpdateOrderFormAction {
+  static readonly type = '[UpdateOrderFormAction] update order form';
+  static readonly des = 'update order form';
+  constructor(public readonly payload: any) {}
 }

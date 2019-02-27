@@ -1,24 +1,12 @@
 import { State, Selector, Action, StateContext, Store } from '@ngxs/store';
-
-const defaults = {
-  orderForm: {
-    model : { name : '', count: 1},
-    dirty: false,
-    status: "",
-    errors: {}
-  },
-  orders: []
-};
+import { ORDER_FORM as defaults } from './defaults/order.form.defaults';
 @State({
-  name: "OrderState",
-  defaults:defaults
+  name: 'OrderState',
+  defaults: defaults,
 })
-export class OrderState{
-static defaults = defaults;
+export class OrderState {
+  static NAME: string = 'OrderFormState';
+  static DEFAULTS = defaults;
 
-constructor(private store: Store){
-
-}
-
-
+  constructor(private store: Store) {}
 }
