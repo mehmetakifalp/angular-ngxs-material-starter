@@ -1,18 +1,22 @@
+<mat-toolbar class="example-header">Header</mat-toolbar>
 
-  <mat-toolbar class="example-header">Header</mat-toolbar>
+<mat-sidenav-container class="example-container">
+  <mat-sidenav
+    mode="side"
+    opened
+    class="example-sidenav"
+    [fixedInViewport]="true"
+    [fixedTopGap]="0"
+    [fixedBottomGap]="0"
+  >
+  </mat-sidenav>
 
-  <mat-sidenav-container class="example-container">
-    <mat-sidenav mode="side" opened class="example-sidenav"
-                 [fixedInViewport]="true" [fixedTopGap]="0"
-                 [fixedBottomGap]="0">
-    </mat-sidenav>
-
-    <mat-sidenav-content>
-      <ng-content></ng-content>
-    </mat-sidenav-content>
-  </mat-sidenav-container>
+  <mat-sidenav-content>
+    <ng-content></ng-content>
+  </mat-sidenav-content>
+</mat-sidenav-container>
 
 
 
 
-  <mat-toolbar class="example-footer">Footer</mat-toolbar>
+<mat-toolbar class="example-footer">Footer</mat-toolbar>

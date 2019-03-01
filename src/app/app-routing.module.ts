@@ -6,10 +6,10 @@ import { AppComponent } from './app.component';
 
 const routes: Routes = [
 
-  { path: '', redirectTo: 'home', canActivate: [], pathMatch:'full'},
+  { path: '', redirectTo: 'home', canActivate: [], pathMatch: 'full' },
   {
-    path : 'home',
-    component: LayoutComponent
+    path: 'home',
+    component: AppComponent
   },
   {
     path: '**',
