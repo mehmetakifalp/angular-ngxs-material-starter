@@ -13,7 +13,7 @@ const routes: Routes = [
   },
   {
     path: '**',
-    redirectTo: '/my-account/overview',
+    redirectTo: 'home',
   },
 
 ];
