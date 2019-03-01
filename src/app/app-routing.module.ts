@@ -1,7 +1,7 @@
-import { NgModule } from '@angular/core';
+import { NgModule, SimpleChange } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LayoutComponent } from './ui/layout/layout.component';
-import { AppComponent } from './app.component';
+import { SimpleFormComponent } from './pages/forms/simple-form.component';
 
 
 const routes: Routes = [
@@ -9,7 +9,11 @@ const routes: Routes = [
   { path: '', redirectTo: 'home', canActivate: [], pathMatch: 'full' },
   {
     path: 'home',
-    component: AppComponent
+    component: LayoutComponent
+  },
+  {
+    path: 'simple-form',
+    component: SimpleFormComponent
   },
   {
     path: '**',

@@ -1,8 +1,8 @@
 import { Component } from "@angular/core";
 
 @Component({
-  selector: 'order-form',
-  templateUrl: 'order.form.component.html',
+  selector: 'app-simple-form',
+  templateUrl: 'simple-form.component.html',
   styles: [`.example-container {
     display: flex;
     flex-direction: column;
@@ -13,13 +13,10 @@ import { Component } from "@angular/core";
   }
   `]
 })
-export class OrderFormComponent {
+export class SimpleFormComponent {
 
 
 
-  constructor() {
-    debugger;
-  }
 
 
 
