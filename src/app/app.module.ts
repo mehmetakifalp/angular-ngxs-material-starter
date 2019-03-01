@@ -9,6 +9,8 @@ import { PagesModule } from './pages/pages.module';
 import { UiModule } from './ui/ui.module';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { NgxsModule } from '@ngxs/store';
+import { SimpleFormState } from './store/states/simple.form.state';
 
 @NgModule({
   declarations: [
@@ -16,6 +18,7 @@ import { CommonModule } from '@angular/common';
   ],
   imports: [
     BrowserModule,
+    NgxsModule.forRoot([SimpleFormState], { developmentMode: true }),
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,

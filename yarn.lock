@@ -326,6 +326,13 @@
   dependencies:
     tslib "^1.9.0"
 
+"@ngxs/logger-plugin@^3.3.2":
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/@ngxs/logger-plugin/-/logger-plugin-3.4.0.tgz#9f2a07f804859c843b51bf070e3e62ad934234f6"
+  integrity sha512-G6HtIwmtQOBfRwslrNZkBQl381DrPnPzyp74f0zxMLJe4zT6BCIpMx2x1jCucTWXs1aYt2cT4R4xXPQPQSCVCw==
+  dependencies:
+    tslib "^1.9.0"
+
 "@ngxs/store@^3.3.4":
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/@ngxs/store/-/store-3.4.0.tgz#66495cc91bef7891e1ce3e77a9f90f036f88b639"
@@ -4419,6 +4426,13 @@ neo-async@^2.5.0:
   version "2.6.0"
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.0.tgz#b9d15e4d71c6762908654b5183ed38b753340835"
   integrity sha512-MFh0d/Wa7vkKO3Y3LlacqAEeHK0mckVqzDieUKTT+KGxi+zIpeVsFxymkIiRpbpDziHc290Xr9A1O4Om7otoRA==
+
+ngxs-reset-plugin@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/ngxs-reset-plugin/-/ngxs-reset-plugin-1.0.1.tgz#1651b40dd92d0b05981d73c2fcda9f3d83c12b60"
+  integrity sha512-FxA2QK0fQLKFNouBlWzgU3vcc1QsTpYGpvfzMOTa8EyB38mtvVZjOFslCLlKo829YxZ2xMS7KbGgiUlH6/AVcw==
+  dependencies:
+    tslib "^1.9.0"
 
 nice-try@^1.0.4:
   version "1.0.5"

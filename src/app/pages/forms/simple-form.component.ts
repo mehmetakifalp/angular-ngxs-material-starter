@@ -1,5 +1,7 @@
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 import { FormGroup, FormBuilder } from '@angular/forms';
+import { Store } from '@ngxs/store';
+import { SaveActionForSimpleForm } from '../../store/action/simple.form.action';
 
 @Component({
   selector: 'app-simple-form',
@@ -26,17 +28,27 @@ import { FormGroup, FormBuilder } from '@angular/forms';
   }
   `]
 })
-export class SimpleFormComponent {
+export class SimpleFormComponent implements OnInit {
 
 
 
   options: FormGroup;
 
-  constructor(fb: FormBuilder) {
+  constructor(fb: FormBuilder, private store: Store) {
     this.options = fb.group({
       hideRequired: false,
       floatLabel: 'auto',
     });
+  }
+
+
+  ngOnInit() {
+
+  }
+
+  saveForm() {
+    alert();
+    this.store.dispatch(new SaveActionForSimpleForm('test'));
   }
 
 
