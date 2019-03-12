@@ -1,8 +1,6 @@
 <div class="example-container">
-  <form
-    class="example-container"
-    [formGroup]="options"
-  >
+  {{ firstObservable$ | async | customPipe }}
+  <form class="example-container" [formGroup]="options">
     <mat-checkbox formControlName="hideRequired">Hide required marker</mat-checkbox>
     <div>
       <label>Float label: </label>
@@ -14,48 +12,29 @@
     </div>
   </form>
 
-  <mat-form-field
-    [hideRequiredMarker]="options.value.hideRequired"
-    [floatLabel]="options.value.floatLabel"
-  >
-    <input
-      matInput
-      placeholder="Simple placeholder"
-      required
-    >
+  <mat-form-field [hideRequiredMarker]="options.value.hideRequired" [floatLabel]="options.value.floatLabel">
+    <input matInput placeholder="Simple placeholder" required />
   </mat-form-field>
 
   <mat-form-field [floatLabel]="options.value.floatLabel">
     <mat-label>Both a label and a placeholder</mat-label>
-    <input
-      matInput
-      placeholder="Simple placeholder"
-    >
+    <input matInput placeholder="Simple placeholder" />
   </mat-form-field>
 
-  <mat-form-field
-    [hideRequiredMarker]="options.value.hideRequired"
-    [floatLabel]="options.value.floatLabel"
-  >
+  <mat-form-field [hideRequiredMarker]="options.value.hideRequired" [floatLabel]="options.value.floatLabel">
     <mat-select required>
       <mat-option>-- None --</mat-option>
       <mat-option value="option">Option</mat-option>
     </mat-select>
-    <mat-label>
-      <mat-icon>favorite</mat-icon> <b> Fancy</b> <i> label</i>
-    </mat-label>
+    <mat-label> <mat-icon>favorite</mat-icon> <b> Fancy</b> <i> label</i> </mat-label>
   </mat-form-field>
 
-  <mat-slide-toggle
-    class="example-margin"
-    [color]="color"
-    (change)="saveForm()"
-  >
+  <mat-slide-toggle class="example-margin" [color]="color" (change)="saveForm()">
     Slide me!
   </mat-slide-toggle>
-
 </div>
 
+<a routerLink="['/recipes', parameter]">Home</a>
 
 <!-- Copyright 2018 Google Inc. All Rights Reserved.
     Use of this source code is governed by an MIT-style license that

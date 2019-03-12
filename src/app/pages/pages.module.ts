@@ -1,15 +1,15 @@
-
 import { NgModule } from '@angular/core';
 import { UiModule } from '../ui/ui.module';
 import { SimpleFormComponent } from './forms/simple-form.component';
 import { HomeComponent } from './home/home.component';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CustomPipe } from './forms/custom.pipe';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
-  imports: [CommonModule, FormsModule,
-    ReactiveFormsModule, UiModule],
+  imports: [CommonModule, RouterModule, FormsModule, ReactiveFormsModule, UiModule],
   exports: [],
-  declarations: [HomeComponent, SimpleFormComponent]
+  declarations: [HomeComponent, SimpleFormComponent, CustomPipe],
 })
-export class PagesModule { }
+export class PagesModule {}
