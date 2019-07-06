@@ -21,6 +21,7 @@
     "@angular/platform-browser": "~7.2.0",
     "@angular/platform-browser-dynamic": "~7.2.0",
     "@angular/router": "~7.2.0",
+    "@ngx-translate/core": "^11.0.1",
     "@ngxs/devtools-plugin": "^3.3.4",
     "@ngxs/form-plugin": "^3.3.4",
     "@ngxs/store": "^3.3.4",

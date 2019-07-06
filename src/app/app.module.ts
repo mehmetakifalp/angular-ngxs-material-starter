@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+import { TranslateModule } from '@ngx-translate/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PagesModule } from './pages/pages.module';
 import { UiModule } from './ui/ui.module';
@@ -15,28 +15,22 @@ import { NgxsLoggerPluginModule } from '@ngxs/logger-plugin';
 import { SimpleFormState } from './store/states/simple.form.state';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
+    TranslateModule.forRoot(),
     NgxsModule.forRoot([SimpleFormState], { developmentMode: true }),
     NgxsResetPluginModule.forRoot(),
-    NgxsLoggerPluginModule.forRoot({
-    }),
+    NgxsLoggerPluginModule.forRoot({}),
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
     UiModule,
     PagesModule,
-  ], exports: [
-
-    CommonModule,
-    FormsModule,
-    ReactiveFormsModule
   ],
+  exports: [CommonModule, FormsModule, ReactiveFormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
