@@ -47,7 +47,6 @@ export class SimpleFormComponent implements OnInit {
   ngOnInit() {}
 
   saveForm() {
-    alert();
     this.store.dispatch(new SaveActionForSimpleForm('test'));
   }
 }
