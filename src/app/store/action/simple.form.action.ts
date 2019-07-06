@@ -1,8 +1,5 @@
 export class SaveActionForSimpleForm {
-  static readonly type = '';
-  static readonly desc = '';
+  static readonly type = '[SaveActionForSimpleForm] SaveActionForSimpleForm';
 
-  constructor(public readonly payload: any) {
-
-  }
+  constructor(public payload: any) {}
 }

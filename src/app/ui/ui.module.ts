@@ -43,12 +43,9 @@ import {
   MatTreeModule,
 } from '@angular/material';
 import { LayoutComponent } from './layout/layout.component';
-
+import { TranslateModule } from '@ngx-translate/core';
 @NgModule({
-  imports: [
-    MatToolbarModule,
-    MatSidenavModule,
-  ],
+  imports: [MatToolbarModule, MatSidenavModule, TranslateModule],
   exports: [
     A11yModule,
     CdkStepperModule,
@@ -91,8 +88,8 @@ import { LayoutComponent } from './layout/layout.component';
     MatTooltipModule,
     MatTreeModule,
     ScrollingModule,
-    LayoutComponent
+    LayoutComponent,
   ],
-  declarations: [LayoutComponent]
+  declarations: [LayoutComponent],
 })
-export class UiModule { }
+export class UiModule {}

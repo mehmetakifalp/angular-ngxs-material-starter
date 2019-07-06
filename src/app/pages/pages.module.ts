@@ -6,9 +6,9 @@ import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CustomPipe } from './forms/custom.pipe';
 import { RouterModule } from '@angular/router';
-
+import { TranslateModule } from '@ngx-translate/core';
 @NgModule({
-  imports: [CommonModule, RouterModule, FormsModule, ReactiveFormsModule, UiModule],
+  imports: [CommonModule, RouterModule, FormsModule, ReactiveFormsModule, UiModule, TranslateModule],
   exports: [],
   declarations: [HomeComponent, SimpleFormComponent, CustomPipe],
 })
