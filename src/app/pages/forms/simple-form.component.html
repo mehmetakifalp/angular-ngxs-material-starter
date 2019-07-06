@@ -3,11 +3,11 @@
   <form class="example-container" [formGroup]="options">
     <mat-checkbox formControlName="hideRequired">Hide required marker</mat-checkbox>
     <div>
-      <label>Float label: </label>
+      <label>{{ 'Float label' | translate }}: </label>
       <mat-radio-group formControlName="floatLabel">
-        <mat-radio-button value="auto">Auto</mat-radio-button>
-        <mat-radio-button value="always">Always</mat-radio-button>
-        <mat-radio-button value="never">Never</mat-radio-button>
+        <mat-radio-button value="auto">{{ 'Auto' | translate }}</mat-radio-button>
+        <mat-radio-button value="always">{{ 'Always' | translate }}</mat-radio-button>
+        <mat-radio-button value="never">{{ 'Never' | translate }}</mat-radio-button>
       </mat-radio-group>
     </div>
   </form>
@@ -17,7 +17,7 @@
   </mat-form-field>
 
   <mat-form-field [floatLabel]="options.value.floatLabel">
-    <mat-label>Both a label and a placeholder</mat-label>
+    <mat-label>{{ 'Both a label and a placeholder' | translate }}</mat-label>
     <input matInput placeholder="Simple placeholder" />
   </mat-form-field>
 
@@ -34,8 +34,4 @@
   </mat-slide-toggle>
 </div>
 
-<a routerLink="['/recipes', parameter]">Home</a>
-
-<!-- Copyright 2018 Google Inc. All Rights Reserved.
-    Use of this source code is governed by an MIT-style license that
-    can be found in the LICENSE file at http://angular.io/license -->
+<a routerLink="['/recipes', parameter]">{{ 'Home' | translate }}</a>
