@@ -11,7 +11,7 @@ export class AppComponent {
   title = 'angular-ngxs-material-starter';
 
   constructor(private translateService: TranslateService) {
-    translateService.setTranslation('en-US', defaultLanguage);
-    translateService.setDefaultLang('en-US');
+    this.translateService.setTranslation('en-US', defaultLanguage);
+    this.translateService.setDefaultLang('en-US');
   }
 }
